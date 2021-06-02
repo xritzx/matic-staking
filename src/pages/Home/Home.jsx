@@ -1,9 +1,8 @@
 import { React, useEffect, useState } from 'react';
 import { Layout, Button, InputNumber, Col, Row, Menu, Card, Avatar } from 'antd';
 import './Home.less';
-import {GlobalLoader} from '../../components/index';
+import {GlobalLoader,Navigation,Header,Features,Tiers} from '../../components/index';
 import {CheckCircleTwoTone } from '@ant-design/icons';
-import { Navigation  } from '../../components';
 import JsonData from '../../data/data.json';
 
 const Home = () => {
@@ -16,7 +15,10 @@ const Home = () => {
     return (
         <div>
             <Navigation />
-            <Navigation data={landingPageData.Header} />
+            <Header data={landingPageData.Header} />
+            <Features data={landingPageData.Features} />
+            <Tiers data = {landingPageData.Tiers} />
         </div>
     )};
+    
 export default Home;

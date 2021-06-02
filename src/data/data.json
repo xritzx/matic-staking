@@ -1,8 +1,8 @@
 {
     "Header": {
 
-        "title": "We are a Landing Page",
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+        "title": "The First Insured Project Accelerator For Matic",
+        "paragraph": "Crypto Mania is a decentralized accelerator and swapping platform, connecting early stage Matic innovators with our community of donors.."
 
     },
     "About": {
@@ -133,11 +133,6 @@
             "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
         },
         {
-            "icon": "",
-            "title": "",
-            "text": ""
-        },
-        {
             "icon": "fa fa-magic",
             "title": "Accelerator",
             "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
@@ -146,6 +141,32 @@
             "icon": "fa fa-magic",
             "title": "Quality Listing",
             "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+        }
+    ],
+    "Tiers": [{
+            "icon": "fa fa-comments-o",
+            "title": "Knight",
+            "text": "100 10% 2x 30000"
+        },
+        {
+            "icon": "fa fa-bullhorn",
+            "title": "Bishop",
+            "text": "500 15% 3x 45000"
+        },
+        {
+            "icon": "fa fa-group",
+            "title": "Rook",
+            "text": "1000 20% 4x 60000"
+        },
+        {
+            "icon": "fa fa-magic",
+            "title": "King",
+            "text": "2000 25% 5x 75000"
+        },
+        {
+            "icon": "fa fa-magic",
+            "title": "Queen",
+            "text": "4000 30% 6x 90000"
         }
     ]
 }
