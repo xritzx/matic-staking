@@ -1,4 +1,9 @@
-export const Navigation = (props) => {
+import { connect } from 'react-redux';
+import React from 'react';
+
+
+
+export const Header = (props) => {
   return (
     <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
       <div className='container'>
@@ -45,24 +50,10 @@ export const Navigation = (props) => {
                 IDOs
               </a>
             </li>
-            {/* <li>
-              <a href='#testimonials' className='page-scroll'>
-                Testimonials
-              </a>
-            </li>
-            <li>
-              <a href='#team' className='page-scroll'>
-                Team
-              </a>
-            </li>
-            <li>
-              <a href='#contact' className='page-scroll'>
-                Contact
-              </a>
-            </li> */}
           </ul>
         </div>
       </div>
     </nav>
   )
 }
+
