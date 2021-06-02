@@ -1,6 +1,6 @@
 import GlobalLoader from "./Loader/Loader";
 import Navigation from "./Navigation/Navigation";
-import Header from "./Header/Header";
+import Banner from "./Banner/Banner";
 import Features from "./Features/Features";
 import Tiers from "./Tiers/Tiers";
 
@@ -8,7 +8,7 @@ import Tiers from "./Tiers/Tiers";
 export {
     GlobalLoader,
     Navigation,
-    Header,
+    Banner,
     Features,
     Tiers
 };

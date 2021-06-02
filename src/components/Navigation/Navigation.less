@@ -1,0 +1,33 @@
+@import '../../App.less';
+
+.header {
+    background-color: @primary-color !important;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    .button {
+        background-color: @primary-color !important;
+        color: #ffffff;
+    }
+}
+
+.menu {
+    background-color: transparent !important;
+    color: #ffffff;
+    :hover{
+        color: #fff;
+    }
+    :active{
+        color: #fff;
+    }
+    .ant-menu-item-selected, .ant-menu-item-active{
+        color: white !important;
+    }
+}
+
+.brand {
+    text-align: center !important;
+    font-size: 1.8em !important;
+    font-weight: bold !important;
+    color: white !important;
+}

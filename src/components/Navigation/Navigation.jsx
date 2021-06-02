@@ -1,57 +1,49 @@
-import React from 'react';
+import React, { useState, useLayoutEffect } from 'react';
+import { Layout, Menu, Row, Col, Button, Drawer} from 'antd';
+import { PicRightOutlined } from '@ant-design/icons';
 
+import "./Navigation.less";
+import MenuItems from './MenuItems';
 
-export const Navigation = (props) => {
+export const Navigation = () => {
+  const [ drawerMode, setMode ] = useState(false);
+  const [ mobile, setMobile] = useState(window.innerWidth <= 760);
+  useLayoutEffect(() => {
+    function updateSize() {
+      setMobile(window.innerWidth <= 760);
+    }
+    window.addEventListener('resize', updateSize);
+    updateSize();
+    return () => window.removeEventListener('resize', updateSize);
+  }, []);
+
   return (
-    <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
-      <div className='container'>
-        <div className='navbar-header'>
-          <button
-            type='button'
-            className='navbar-toggle collapsed'
-            data-toggle='collapse'
-            data-target='#bs-example-navbar-collapse-1'
-          >
-            {' '}
-            <span className='sr-only'>Toggle navigation</span>{' '}
-            <span className='icon-bar'></span>{' '}
-            <span className='icon-bar'></span>{' '}
-            <span className='icon-bar'></span>{' '}
-          </button>
-          <a className='navbar-brand page-scroll' href='#page-top'>
-            Crypto Mania
-          </a>{' '}
-        </div>
+    <Layout.Header className='header'>
+      <Row justify="space-around">
+          <Col>
+            <p className="brand">Crypto Mania</p>
+          </Col>
+          <Col>
 
-        <div
-          className='collapse navbar-collapse'
-          id='bs-example-navbar-collapse-1'
-        >
-          <ul className='nav navbar-nav navbar-right'>
-            <li>
-              <a href='' >
-                Smart Staking
-              </a>
-            </li>
-            <li>
-              <a href=''>
-                Farming
-              </a>
-            </li>
-            <li>
-              <a href=''>
-                Raffle
-              </a>
-            </li>
-            <li>
-              <a href=''>
-                IDOs
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+          {
+            mobile?(
+              <Button onClick={()=>setMode(!drawerMode)} shape="circle" icon={ <PicRightOutlined />} />
+            ):(
+              <MenuItems mode="horizontal" className="menu"/>
+            )
+          }
+            <Drawer
+              title="Menu"
+              placement="right"
+              closable={true}
+              onClose={()=>setMode(false)}
+              visible={drawerMode}
+            >
+              <MenuItems mode="vertical"/>
+            </Drawer>
+          </Col>
+      </Row>
+    </Layout.Header>
   )
 }
 
