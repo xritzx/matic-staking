@@ -16,20 +16,20 @@ export const Features = (props) => {
           // </Col>
           <div className='cute-card'>
               <div className='title-card'>
-              <h3> {d.title} </h3>
+              <h1> {d.title} </h1>
               </div>
               <div className='mid-card'>
-              <h3>1230</h3>
+              {/* <h3>1230</h3> */}
               <p>{d.text}</p>
               </div>
-              <div className='footer-card'>
+              {/* <div className='footer-card'>
                 <h5>Lottery Odds</h5>
                 <p>25%</p>
                 <h5>WhiteList Requirements</h5>
                 <p>None</p>
                 <h5>Pool Weights</h5>
                 <p>2x</p>
-              </div>
+              </div> */}
             </div>
         )) 
       :'Loading...'

@@ -144,29 +144,39 @@
         }
     ],
     "Tiers": [{
-            "icon": "fa fa-comments-o",
             "title": "Knight",
-            "text": "100 10% 2x 30000"
+            "tokens": "100",
+            "odds": "10%",
+            "weight": "2x",
+            "text": "30000"
         },
         {
-            "icon": "fa fa-bullhorn",
             "title": "Bishop",
-            "text": "500 15% 3x 45000"
+            "tokens": "500",
+            "odds": "15%",
+            "weight": "3x",
+            "text": "45000"
         },
         {
-            "icon": "fa fa-group",
             "title": "Rook",
-            "text": "1000 20% 4x 60000"
+            "tokens": "1000",
+            "odds": "20%",
+            "weight": "4x",
+            "text": "60000"
         },
         {
-            "icon": "fa fa-magic",
             "title": "King",
-            "text": "2000 25% 5x 75000"
+            "tokens": "2000",
+            "odds": "25%",
+            "weight": "5x",
+            "text": "75000"
         },
         {
-            "icon": "fa fa-magic",
             "title": "Queen",
-            "text": "4000 30% 6x 90000"
+            "tokens": "4000",
+            "odds": "30%",
+            "weight": "6x",
+            "text": "90000"
         }
     ]
 }
