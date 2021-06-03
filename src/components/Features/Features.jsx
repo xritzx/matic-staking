@@ -6,6 +6,8 @@ const {Meta} = Card;
 
 export const Features = (props) => {
   return (
+    <div className='heading-card'>
+      <h1>FEATURES</h1>
     <Row>
       { props.data ?
         props.data.map((d,i) => (
@@ -14,6 +16,7 @@ export const Features = (props) => {
           //     <Meta title = {`${d.title}`} description = {`${d.text}`} style = {{textAlign:'center'}}/>
           //   </Card>
           // </Col>
+          
           <div className='cute-card'>
               <div className='title-card'>
               <h1> {d.title} </h1>
@@ -35,6 +38,7 @@ export const Features = (props) => {
       :'Loading...'
       }
     </Row>
+    </div>
   )}
 
     // <Card title="Card Title">
