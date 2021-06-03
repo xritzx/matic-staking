@@ -8,7 +8,7 @@ export const Features = (props) => {
   return (
     <div className='heading-card'>
       <h1>FEATURES</h1>
-    <Row>
+    <Row justify="center">
       { props.data ?
         props.data.map((d,i) => (
 
@@ -19,7 +19,7 @@ export const Features = (props) => {
           
           <div className='cute-card'>
               <div className='title-card'>
-              <h1> {d.title} </h1>
+              <p> {d.title} </p>
               </div>
               <div className='mid-card'>
               {/* <h3>1230</h3> */}

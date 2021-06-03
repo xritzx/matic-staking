@@ -3,6 +3,7 @@ import Navigation from "./Navigation/Navigation";
 import Banner from "./Banner/Banner";
 import Features from "./Features/Features";
 import Tiers from "./Tiers/Tiers";
+import Team from "./Team/Team";
 
 
 export {
@@ -10,5 +11,6 @@ export {
     Navigation,
     Banner,
     Features,
-    Tiers
+    Tiers,
+    Team
 };

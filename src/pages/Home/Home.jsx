@@ -1,7 +1,7 @@
 import { React, useEffect, useState } from 'react';
 import { Layout, Button, InputNumber, Col, Row, Menu, Card, Avatar } from 'antd';
 import './Home.less';
-import {GlobalLoader,Navigation,Banner,Features,Tiers} from '../../components/index';
+import { Team, Navigation, Banner, Features, Tiers } from '../../components/index';
 import {CheckCircleTwoTone } from '@ant-design/icons';
 import JsonData from '../../data/data.json';
 import Particles from 'react-tsparticles';
@@ -18,14 +18,14 @@ const Home = () => {
 
 
     return (
-        <Layout>
+        <Layout className="home-layout">
           <Navigation />
           <Content>
             <Particles options={particleOptions} height="500px" style={{"position": "absolute"}}/>
             <Banner data={landingPageData.Header} />
             <Features data={landingPageData.Features} />
             <Tiers data = {landingPageData.Tiers} />
-
+            <Team data={landingPageData.Team} />
           </Content>
           <Footer>
 

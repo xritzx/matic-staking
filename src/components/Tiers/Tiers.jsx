@@ -8,7 +8,7 @@ export const Tiers = (props) => {
   return (
     <div className='heading-tier'>
       <h1>TIERS</h1>
-      <Row>
+      <Row justify="center" align="center">
         { props.data ?
           props.data.map((d,i) => (
 
