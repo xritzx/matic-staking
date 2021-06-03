@@ -1,20 +1,40 @@
-import { Card,Col } from 'antd';
+import { Card, Col, Row } from 'antd';
+import './Features.less';
 const {Meta} = Card;
 
 
 
 export const Features = (props) => {
   return (
-    <div>
+    <Row>
       { props.data ?
         props.data.map((d,i) => (
-          <Card hoverable style={{width:300, marginTop:16, marginLeft: 16}} type="inner">
-            <Meta title = {`${d.title}`} description = {`${d.text}`} style = {{textAlign:'center'}}/>
-          </Card>
+
+          // <Col>
+          //     <Meta title = {`${d.title}`} description = {`${d.text}`} style = {{textAlign:'center'}}/>
+          //   </Card>
+          // </Col>
+          <div className='cute-card'>
+              <div className='title-card'>
+              <h3> {d.title} </h3>
+              </div>
+              <div className='mid-card'>
+              <h3>1230</h3>
+              <p>{d.text}</p>
+              </div>
+              <div className='footer-card'>
+                <h5>Lottery Odds</h5>
+                <p>25%</p>
+                <h5>WhiteList Requirements</h5>
+                <p>None</p>
+                <h5>Pool Weights</h5>
+                <p>2x</p>
+              </div>
+            </div>
         )) 
       :'Loading...'
       }
-    </div>
+    </Row>
   )}
 
     // <Card title="Card Title">

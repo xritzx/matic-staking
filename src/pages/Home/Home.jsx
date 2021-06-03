@@ -21,7 +21,7 @@ const Home = () => {
         <Layout>
           <Navigation />
           <Content>
-            <Particles options={particleOptions} height="70%" style={{"position": "absolute"}}/>
+            <Particles options={particleOptions} height="500px" style={{"position": "absolute"}}/>
             <Banner data={landingPageData.Header} />
             <Features data={landingPageData.Features} />
             <Tiers data = {landingPageData.Tiers} />
