@@ -1,8 +1,5 @@
-import { Card,Col, Row } from 'antd';
+import { Row } from 'antd';
 import './Tiers.less';
-const {Meta} = Card;
-
-
 
 export const Tiers = (props) => {
   return (

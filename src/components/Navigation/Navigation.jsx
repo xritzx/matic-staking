@@ -1,5 +1,5 @@
 import React, { useState, useLayoutEffect } from 'react';
-import { Layout, Menu, Row, Col, Button, Drawer} from 'antd';
+import { Layout, Row, Col, Button, Drawer} from 'antd';
 import { PicRightOutlined } from '@ant-design/icons';
 
 import "./Navigation.less";

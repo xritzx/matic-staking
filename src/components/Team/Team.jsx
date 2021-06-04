@@ -1,8 +1,7 @@
-import { Card, Row, Layout } from 'antd';
+import { Card, Row } from 'antd';
 import './Team.less';
-import { EditOutlined, EllipsisOutlined, FacebookOutlined, LinkedinOutlined, SettingOutlined, TwitterOutlined } from '@ant-design/icons';
+import { FacebookOutlined, LinkedinOutlined, TwitterOutlined } from '@ant-design/icons';
 
-const { Header } = Layout;
 const { Meta } = Card;
 
 
@@ -14,7 +13,7 @@ export const Team = (props) => {
           {props.data
             ? props.data.map((d, i) => (
               <Card
-                style={{ width: 300, margin: "30px", border: "none"}}
+                style={{ width: 300, margin: "30px", border: "none" }}
                 cover={<img alt="example" style={{"border-radius":"50%"}}  src={d.img}/>}
                 actions={[
                   <FacebookOutlined key="fb" />,

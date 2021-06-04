@@ -1,7 +1,5 @@
-import { Card, Col, Row } from 'antd';
+import { Row } from 'antd';
 import './Features.less';
-const {Meta} = Card;
-
 
 
 export const Features = (props) => {
